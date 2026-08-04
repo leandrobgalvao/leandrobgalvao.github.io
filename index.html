@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Leandro Galvão | Arquiteto e Urbanista</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0d0f11;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            overflow: hidden;
+        }
+        .card-container {
+            position: relative;
+            width: 100vw;
+            max-width: 430px; /* Tamanho padrão de tela mobile */
+            height: 100vh;
+            max-height: 932px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        /* Mapeamento das áreas dos botões para clique */
+        .click-area {
+            position: absolute;
+            z-index: 10;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        /* Posições relativas da grade 2x2 dos botões */
+        .btn-whatsapp {
+            top: 47%;
+            left: 7%;
+            width: 42%;
+            height: 18%;
+        }
+        .btn-telefone {
+            top: 47%;
+            left: 51%;
+            width: 42%;
+            height: 18%;
+        }
+        .btn-instagram {
+            top: 68%;
+            left: 7%;
+            width: 42%;
+            height: 18%;
+        }
+        .btn-youtube {
+            top: 68%;
+            left: 51%;
+            width: 42%;
+            height: 18%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- Imagem principal do cartão -->
+        <img src="cartao.png" alt="Leandro Galvão - Arquiteto e Urbanista" class="card-image">
+
+        <!-- Links invisíveis posicionados sobre os ícones -->
+        <a href="https://wa.me/5512981725400" class="click-area btn-whatsapp" target="_blank" aria-label="WhatsApp"></a>
+        <a href="tel:+5512981725400" class="click-area btn-telefone" aria-label="Telefone"></a>
+        <a href="https://instagram.com/SEU_INSTAGRAM" class="click-area btn-instagram" target="_blank" aria-label="Instagram"></a>
+        <a href="https://youtube.com/@SEU_CANAL" class="click-area btn-youtube" target="_blank" aria-label="YouTube"></a>
+    </div>
+
+</body>
+</html>
